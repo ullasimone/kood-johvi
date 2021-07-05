@@ -1,0 +1,3 @@
+#!bin /bash
+
+ls -t -F -m | sed 's/ //g'
