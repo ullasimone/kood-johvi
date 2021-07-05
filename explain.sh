@@ -1,6 +1,5 @@
 echo 'Annabel Church'
 echo '699607'
-echo 'Blue Honda'
+echo 'blue Honda'
 echo 'Mike Bostock'
 echo 'Joe Germuska'
-echo 'Aron Pilhofer'
