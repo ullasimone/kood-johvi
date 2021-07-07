@@ -1,4 +1,4 @@
-package main
+package IsNegative
 
 import (
 	"github.com/01-edu/z01"
