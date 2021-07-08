@@ -6,15 +6,15 @@
 package piscine
 
 func BasicAtoi(s string) int {
-	aNumber := 0
-	a := 0
-	s := []rune(s)
-	for _, word := range s {
+	o_number := 0
+	c := 0
+	a_s := []rune(s)
+	for _, word := range a_s {
 		for i := '0'; i < word; i++ {
-			a++
+			c++
 		}
-		aNumber = aNumber*10 + a
-		a = 0
+		o_number = o_number*10 + c
+		c = 0
 	}
-	return aNumber
+	return o_number
 }
