@@ -1,4 +1,4 @@
-package PointOne
+package main
 
 import "fmt"
 
