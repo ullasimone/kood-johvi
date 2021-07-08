@@ -3,8 +3,8 @@
 package piscine
 
 func Swap(a *int, b *int) {
-	var asdfA := *a
-	var asdfB := *b
-	*a = asdfA
-	*b = asdfB
+	tempA := *a
+	tempB := *b
+	*a = tempA
+	*b = tempB
 }
