@@ -1,7 +1,4 @@
-/* Write a function that prints, in ascending order and on a single line: all unique combinations of three different digits so that, the first digit is lower than the second, and the second is lower than the third.
-These combinations are separated by a comma and a space.*/
-
-package main
+package piscine
 
 import (
 	"github.com/01-edu/z01"
@@ -33,13 +30,3 @@ func PrintComb() {
 		}
 	}
 }
-
-func main() {
-	PrintComb()
-}
-
-/*OUTPUT (incomplete)
-
-$ go run . | cat -e
-012, 013, 014, 015, 016, 017, 018, 019, 023, ..., 689, 789$
-$*/

@@ -1,5 +1,3 @@
-// Write a function that prints 'T' (true) on a single line if the int passed as parameter is negative, otherwise it prints 'F' (false).
-
 package piscine
 
 import (
@@ -14,15 +12,3 @@ func IsNegative(nb int) {
 	}
 	z01.PrintRune('\n')
 }
-
-/*func main() {
-	IsNegative(1)
-	IsNegative(0)
-	IsNegative(-1)
-}
-
-OUTPUT
-F
-F
-T
-*/
