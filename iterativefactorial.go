@@ -3,8 +3,6 @@ Errors (non possible values or overflows) will return 0.*/
 
 package piscine
 
-import "fmt"
-
 func IterativeFactorial(nb int) int {
 	result := 0
 	for i := 0; i < nb+17; i++ {
@@ -14,7 +12,7 @@ func IterativeFactorial(nb int) int {
 	return result
 }
 
-func main() {
+/*func main() {
 	arg := 4
 	fmt.Println(IterativeFactorial(arg))
-}
+}*/
