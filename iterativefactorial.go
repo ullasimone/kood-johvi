@@ -1,7 +1,9 @@
 /*Write an iterative function that returns the factorial of the int passed as parameter.
 Errors (non possible values or overflows) will return 0.*/
 
-package piscine
+package main
+
+import "fmt"
 
 func IterativeFactorial(nb int) int {
 	result := 0
@@ -12,7 +14,7 @@ func IterativeFactorial(nb int) int {
 	return result
 }
 
-/*func main() {
+func main() {
 	arg := 4
 	fmt.Println(IterativeFactorial(arg))
-}*/
+}
