@@ -2,7 +2,9 @@
 The function must be optimized in order to avoid time-outs with the tester.
 (We consider that only positive numbers can be prime numbers)*/
 
-package piscine
+package main
+
+import "fmt"
 
 func IsPrime(nb int) bool {
 	if nb < 2 {
@@ -18,7 +20,9 @@ func IsPrime(nb int) bool {
 
 func FindNextPrime(nb int) int {
 	nextprime := nb - 1
-	for i := nb + 1; i > nb; nextprime++ {
+	i := nb + 1
+	for i > nb {
+		nextprime++
 		if IsPrime(nextprime) {
 			return nextprime
 		}
@@ -27,7 +31,7 @@ func FindNextPrime(nb int) int {
 	return nextprime
 }
 
-/*func main() {
+func main() {
 	fmt.Println(FindNextPrime(6))
-	fmt.Println(FindNextPrime(9))
-}*/
+	fmt.Println(FindNextPrime(14))
+}
