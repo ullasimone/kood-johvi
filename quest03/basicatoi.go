@@ -18,3 +18,24 @@ func BasicAtoi(s string) int {
 	}
 	return o_number
 }
+
+// package main
+
+// import (
+// 	"fmt"
+// 	"piscine"
+// )
+
+// func main() {
+// 	fmt.Println(piscine.BasicAtoi("12345"))
+// 	fmt.Println(piscine.BasicAtoi("0000000012345"))
+// 	fmt.Println(piscine.BasicAtoi("000000"))
+// }
+
+// OUTPUT
+
+// $ go run .
+// 12345
+// 12345
+// 0
+// $

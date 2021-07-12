@@ -14,3 +14,22 @@ func SortIntegerTable(table []int) {
 		}
 	}
 }
+
+// package main
+
+// import (
+// 	"fmt"
+// 	"piscine"
+// )
+
+// func main() {
+// 	s := []int{5,4,3,2,1,0}
+// 	piscine.SortIntegerTable(s)
+// 	fmt.Println(s)
+// }
+
+// OUTPUT
+
+// $ go run .
+// [0 1 2 3 4 5]
+// $

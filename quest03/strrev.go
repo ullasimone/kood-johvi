@@ -10,3 +10,22 @@ func StrRev(s string) string {
 	}
 	return reverse
 }
+
+// package main
+
+// import (
+// 	"fmt"
+// 	"piscine"
+// )
+
+// func main() {
+// 	s := "Hello World!"
+// 	s = piscine.StrRev(s)
+// 	fmt.Println(s)
+// }
+
+// OUTPUT
+
+// $ go run .
+// !dlroW olleH
+// $

@@ -27,3 +27,26 @@ func BasicAtoi2(s string) int {
 		return 0
 	}
 }
+
+// package main
+
+// import (
+// 	"fmt"
+// 	"piscine"
+// )
+
+// func main() {
+// 	fmt.Println(piscine.BasicAtoi2("12345"))
+// 	fmt.Println(piscine.BasicAtoi2("0000000012345"))
+// 	fmt.Println(piscine.BasicAtoi2("012 345"))
+// 	fmt.Println(piscine.BasicAtoi2("Hello World!"))
+// }
+
+// OUTPUT
+
+// $ go run .
+// 12345
+// 12345
+// 0
+// 0
+// $
