@@ -2,13 +2,13 @@
 The function must be optimized in order to avoid time-outs with the tester.
 (We consider that only positive numbers can be prime numbers)*/
 
-package main
+package piscine
 
 /*import (
 	"fmt"
 )*/
 
-func IsPrime(nb int) bool {
+func kartul(nb int) bool {
 	// optimize below 2
 	if nb < 2 {
 		return false
@@ -24,7 +24,7 @@ func IsPrime(nb int) bool {
 
 func FindNextPrime(nb int) int {
 	for i := nb; ; i++ {
-		if IsPrime(i) {
+		if kartul(i) {
 			return i
 		}
 	}
