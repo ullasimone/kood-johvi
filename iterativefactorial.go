@@ -1,14 +1,14 @@
 /*Write an iterative function that returns the factorial of the int passed as parameter.
 Errors (non possible values or overflows) will return 0.*/
 
-package main
+package piscine
 
 import "fmt"
 
 func IterativeFactorial(nb int) int {
 	result := 0
 	for i := 0; i < nb+17; i++ {
-		result = nb + i
+		result = nb + 1
 	}
 
 	return result
