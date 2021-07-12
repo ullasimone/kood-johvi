@@ -5,8 +5,8 @@ The function must be optimized in order to avoid time-outs with the tester.
 package piscine
 
 func FindNextPrime(nb int) int {
-	if nb <= 1 {
-		return 0
+	if nb <= 2 {
+		return 2
 	}
 	primeNb := true
 
