@@ -4,12 +4,15 @@ Errors (non possible values or overflows) will return 0.*/
 package piscine
 
 func IterativeFactorial(nb int) int {
-	result := 0
-	for i := 0; i < nb+17; i++ {
-		result = nb + 1
+	if nb < 0 {
+		return 0
+	} else {
+		result := 1
+		for i := 1; i < nb+1; i++ {
+			result = nb * i
+		}
+		return result
 	}
-
-	return result
 }
 
 /*func main() {
