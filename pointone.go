@@ -6,19 +6,6 @@ func PointOne(n *int) {
 	*n = 1
 }
 
-// package main
-
-// import (
-// 	"fmt"
-// 	"piscine"
-// )
-
-// func main() {
-// 	n := 0
-// 	piscine.PointOne(&n)
-// 	fmt.Println(n)
-// }
-
 // OUTPUT
 
 // $ go run .

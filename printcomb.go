@@ -8,26 +8,28 @@ import (
 )
 
 func PrintComb() {
-	for a := '0'; a <= '7'; a++ {
-		if a < b {
-			for b := '1'; b <= '8'; b++ {
-				if b < c {
-					for c := '2'; c <= '9'; c++ {
+	var (
+		a rune = '0'
+		b rune = '1'
+		c rune = '2'
+	)
+	for a = '0'; a <= '7'; a++ {
+		for b = '1'; b <= '8'; b++ {
+			for c = '2'; c <= '9'; c++ {
+				if a < b {
+					if b < c {
 						z01.PrintRune(a)
 						z01.PrintRune(b)
 						z01.PrintRune(c)
-						z01.PrintRune(',')
-						z01.PrintRune(' ')
-
+						if a == '7' && b == '8' && c == '9' {
+							z01.PrintRune('\n')
+						} else {
+							z01.PrintRune(',')
+							z01.PrintRune(' ')
+						}
 					}
-				} else {
-					c++
 				}
 			}
-		} else {
-			b++
-			b := '1'
-			c := '2'
 		}
 	}
 }
@@ -36,16 +38,7 @@ func main() {
 	PrintComb()
 }
 
-/*
-package main
-
-import "piscine"
-
-func main() {
-	piscine.PrintComb()
-}
-
-OUTPUT (incomplete)
+/*OUTPUT (incomplete)
 
 $ go run . | cat -e
 012, 013, 014, 015, 016, 017, 018, 019, 023, ..., 689, 789$

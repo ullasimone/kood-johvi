@@ -19,19 +19,10 @@ func IsNegative(nb int) {
 	IsNegative(1)
 	IsNegative(0)
 	IsNegative(-1)
-}*/
+}
 
-// package main
-
-// import "piscine"
-
-// func main() {
-// 	piscine.IsNegative(1)
-// 	piscine.IsNegative(0)
-// 	piscine.IsNegative(-1)
-// }
-
-// OUTPUT
-// F
-// F
-// T
+OUTPUT
+F
+F
+T
+*/
