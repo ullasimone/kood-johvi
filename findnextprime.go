@@ -8,7 +8,7 @@ package piscine
 	"fmt"
 )*/
 
-func kartul(nb int) bool {
+func kapsas(nb int) bool {
 	// optimize below 2
 	if nb < 2 {
 		return false
@@ -24,10 +24,12 @@ func kartul(nb int) bool {
 
 func FindNextPrime(nb int) int {
 	for i := nb; ; i++ {
-		if kartul(i) {
+		if kapsas(i) {
 			return i
+			break
 		}
 	}
+	return 1
 }
 
 /*func main() {
