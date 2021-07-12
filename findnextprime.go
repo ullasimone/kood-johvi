@@ -26,7 +26,7 @@ func FindNextPrime(nb int) int {
 	if nb <= 2 {
 		return nb
 	}
-	for i := nb; i < 50; i++ {
+	for i := nb; ; i++ {
 		if kapsas(i) {
 			return i
 		}
