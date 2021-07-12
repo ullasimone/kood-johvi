@@ -24,13 +24,14 @@ func kapsas(nb int) bool {
 
 func FindNextPrime(nb int) int {
 	if nb <= 2 {
-		return 2
+		return nb
 	}
-	for i := nb; ; i++ {
+	for i := nb; i < 50; i++ {
 		if kapsas(i) {
 			return i
 		}
 	}
+	return 1
 }
 
 /*func main() {
