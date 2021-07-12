@@ -7,8 +7,8 @@ func Sqrt(nb int) int {
 		if i*i == nb {
 			return i
 		}
-		return 0
 	}
+	return 0
 }
 
 /*func main() {
