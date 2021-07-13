@@ -5,14 +5,13 @@ The function must be optimized in order to avoid time-outs with the tester.
 package piscine
 
 func FindNextPrime(nb int) int {
-	result := nb
-	if nb <= 2 {
-		return 2
-	}
-	for i := nb; i <= 1560; i++ {
-		if IsPrime(i) {
-			return i
+	if IsPrime(nb) {
+		return nb
+	} else {
+		i := nb + 1
+		for IsPrime(ní) == false {
+			i++
 		}
+		return i
 	}
-	return result
 }
