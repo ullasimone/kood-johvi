@@ -8,10 +8,12 @@ package piscine
 // import "fmt"
 
 func IsPrime(nb int) bool {
+	// optimize below 2
 	if nb < 2 {
 		return false
-	}
-	for i := 2; i < nb; i++ {
+	} // loop - start to search
+	for i := 2; i*i <= nb; i++ {
+		// divide with i, if it has decimal, not a prime number
 		if nb%i == 0 {
 			return false
 		}
