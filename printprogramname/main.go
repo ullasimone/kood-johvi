@@ -1,4 +1,6 @@
 // Write a program that prints the name of the program.
+// casting - type conversion; type translation; translate the string into an array of runes
+// no need of index, (skip it (for _,)) then translate the rune array into symbols
 
 package main
 
@@ -9,8 +11,7 @@ import (
 )
 
 func main() {
-	arg := []rune(os.Args[0])  // casting - type conversion; type translation; translate the string into an array of runes
-	for _, i := range arg[0] { // no need of index, (skip it (for _,)) then translate the rune array into symbols
+	for _, i := range os.Args[0] {
 		z01.PrintRune(i)
 	}
 	z01.PrintRune(10)
