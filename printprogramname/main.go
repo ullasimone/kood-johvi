@@ -11,8 +11,8 @@ import (
 )
 
 func main() {
-	for _, i := range os.Args[0] {
-		z01.PrintRune(i)
-	}
-	z01.PrintRune(10)
+	runes := []rune(os.Args[0])
+	z01.PrintRune(runes[0])
+
+	// z01.PrintRune(10)
 }
