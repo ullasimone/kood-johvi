@@ -3,14 +3,10 @@
 package main
 
 import (
+	"fmt"
 	"os"
-
-	"github.com/01-edu/z01"
 )
 
 func main() {
-	arg := os.Args
-	for _, i := range arg[0] {
-		z01.PrintRune(i)
-	}
+	fmt.Println(os.Args[0])
 }
