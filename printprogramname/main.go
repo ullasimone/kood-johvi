@@ -9,9 +9,8 @@ import (
 )
 
 func main() {
-	argument := os.Args[0]
-	a := []rune(argument)
-	for _, i := range a {
+	arg := os.Args[0]
+	for _, i := range arg {
 		z01.PrintRune(i)
 	}
 	z01.PrintRune('\n')
