@@ -12,7 +12,7 @@ func Capitalize(s string) string {
 					runeArray[i] = char - 32
 				}
 			} else {
-				if runeArray[i] >= 'A' && runeArray[i] == 'Z' {
+				if runeArray[i] >= 'A' && runeArray[i] <= 'Z' {
 					runeArray[i] = char + 32
 				}
 			}
