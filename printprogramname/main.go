@@ -12,9 +12,8 @@ import (
 
 func main() {
 	arg := []rune(os.Args[0])
-	for i := 2; i <= len(arg); i++ {
+	for i := 2; i <= len(arg)-1; i++ {
 		z01.PrintRune(rune(arg[i]))
 	}
-
 	z01.PrintRune(10)
 }
