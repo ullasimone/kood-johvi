@@ -34,7 +34,7 @@ func SplitWhiteSpaces(s string) []string {
 }
 
 func isWhiteSpace(r byte) bool {
-	if r == ' ' || r == '\n' {
+	if r == ' ' || r == '\n' || r == '\t' {
 		return true
 	}
 	return false
