@@ -4,38 +4,31 @@ The separators are spaces, tabs and newlines.*/
 package piscine
 
 func SplitWhiteSpaces(s string) []string {
-	var arrayString []string
-	countWords := 1
-	len := 0
-	answer := ""
-	for a := range s {
-		if isWhiteSpace(s[a]) {
-			countWords++
+	a := 0
+	noWhiteSpaces := false
+	for i := range s {
+		if noWhiteSpaces && i != 0 && (s[i-1] == ' ' || s[i-1] == '\n' || s[i-1] == '\t') && s[i] != ' ' && s[i] != '\n' && s[i] != '\t' {
+			a++
 		}
-		len++
-	}
-	arrayString = make([]string, countWords)
-	i := 0
-	for j, a := range s {
-		if j+1 == len {
-			arrayString[i] = answer + string(s[j])
-		}
-		if isWhiteSpace(s[j]) {
-			if i <= countWords {
-				arrayString[i] = answer
-				i++
-				answer = ""
-			}
-		} else {
-			answer = answer + string(a)
+		if s[i] != ' ' && s[i] != '\n' && s[i] != '\t' {
+			noWhiteSpaces = true
 		}
 	}
-	return arrayString
-}
+	a++
 
-func isWhiteSpace(r byte) bool {
-	if r == ' ' || r == '\n' || r == '\t' {
-		return true
+	b := 0
+	answer := make([]string, a)
+	oa := true
+	for _, c := range s {
+		if c == ' ' || c == '\n' || c == '\t' {
+			if !oa {
+				b++
+			}
+			oa = true
+			continue
+		}
+		answer[b] = answer[b] + string(c)
+		oa = false
 	}
-	return false
+	return answer
 }
