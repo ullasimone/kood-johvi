@@ -6,12 +6,14 @@ append is not allowed for this exercise.*/
 package piscine
 
 func MakeRange(min, max int) []int {
-	answer := make([]int, max-min)
-	for i := 0; i < (max - min); i++ {
-		answer[i] = min + i
-	}
 	if min >= max {
 		return nil
+	}
+	size := max - min
+	answer := make([]int, size)
+
+	for i := 0; i < size; i++ {
+		answer[i] = min + i
 	}
 	return answer
 }
