@@ -22,7 +22,7 @@ func main() {
 
 	setPoint(points)
 
-	z := "x=42, y=21"
+	z := "x = 42, y = 21"
 
 	for _, i := range z {
 		z01.PrintRune(i)
