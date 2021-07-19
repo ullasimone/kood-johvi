@@ -9,7 +9,7 @@ import (
 func main() {
 	missing := "File name missing"
 	tooMany := "Too many arguments"
-	file := quest8.txt
+	file := "quest8.txt"
 	if len(os.Args) < 2 {
 		fmt.Println(missing)
 		return
