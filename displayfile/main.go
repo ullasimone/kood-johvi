@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	file := "quest8.txt"
+	fileName := "quest8.txt"
 
 	if len(os.Args) < 2 {
 		fmt.Println("File name missing")
@@ -20,7 +20,7 @@ func main() {
 		return
 	}
 
-	data, err := ioutil.ReadFile(file)
+	data, err := ioutil.ReadFile(fileName)
 	if err != nil {
 		fmt.Println(err.Error())
 		return
