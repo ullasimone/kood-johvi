@@ -1,4 +1,5 @@
 // Write a program that prints the arguments received in the command line in reverse order.
+// go run revparams/main.go choumi is the best cat
 
 package main
 

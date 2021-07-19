@@ -4,14 +4,10 @@
 package piscine
 
 func NRune(s string, n int) rune {
-	runes := []rune(s)
-	len := 0
-	for i := range runes {
-		len = i
+	res := []rune(s)            // changes string into runes
+	if n > 0 && n <= len(res) { // searching number is higher than 0 and lower than the length of the string
+		return res[n-1] // return string with the index of number-1
+	} else {
+		return 0
 	}
-
-	if n-1 >= 0 && n-1 <= len {
-		return runes[n-1]
-	}
-	return 0
 }

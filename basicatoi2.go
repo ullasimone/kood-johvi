@@ -6,7 +6,7 @@ func BasicAtoi2(s string) int {
 	checker := true
 	a_s := []rune(s)
 	for _, word := range a_s {
-		if byte(word) >= 48 && byte(word) <= 57 {
+		if word >= 48 && word <= 57 {
 			for i := '0'; i < word; i++ {
 				c++
 			}

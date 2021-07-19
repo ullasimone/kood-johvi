@@ -1,6 +1,6 @@
 package piscine
 
 func LastRune(s string) rune {
-	lS := []rune(s)
-	return lS[len(lS)-1]
+	lR := []rune(s)      // changes string into runes
+	return lR[len(lR)-1] // returns strings last rune as len(s)-1
 }
