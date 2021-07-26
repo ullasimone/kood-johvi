@@ -6,15 +6,15 @@ This function will only have to return the int. For this exercise the error retu
 package piscine
 
 func BasicAtoi(s string) int {
-	o_number := 0
-	c := 0
-	a_s := []rune(s)
-	for _, word := range a_s {
-		for i := '0'; i < word; i++ {
-			c++
+	res := 0                 // final answer
+	counter := 0             // counts chars
+	a_s := []rune(s)         // makes string into runes
+	for _, ch := range a_s { // searches all a_s chars
+		for i := '0'; i < ch; i++ {
+			counter++
 		}
-		o_number = o_number*10 + c
-		c = 0
+		res = res*10 + counter // matemaagia: add chars from loop to each other
+		counter = 0            // nullify for new loop
 	}
-	return o_number
+	return res // return final answer
 }

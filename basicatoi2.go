@@ -1,24 +1,24 @@
 package piscine
 
 func BasicAtoi2(s string) int {
-	o_number := 0
-	c := 0
+	res := 0     // final answer
+	counter := 0 // counts chars
 	checker := true
-	a_s := []rune(s)
-	for _, word := range a_s {
-		if word >= 48 && word <= 57 {
-			for i := '0'; i < word; i++ {
-				c++
+	a_s := []rune(s)         // makes string into runes
+	for _, ch := range a_s { // searches all a_s chars
+		if ch >= 48 && ch <= 57 { // checks if ch is larger than '0' and smaller than '9'
+			for i := '0'; i < ch; i++ {
+				counter++
 			}
-			o_number = o_number*10 + c
-			c = 0
-		} else {
+			res = res*10 + counter // matemaagia: adds chars from loop to each other
+			counter = 0
+		} else { // checks if char != int
 			checker = false
 		}
 	}
-	if checker {
-		return o_number
-	} else {
+	if checker { // if char == int returns res
+		return res
+	} else { // if char != int returns 0
 		return 0
 	}
 }
